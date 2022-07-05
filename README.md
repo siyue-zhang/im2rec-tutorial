@@ -1,5 +1,7 @@
 # im2rec-tutorial
 
+(Reference: [MXNet blog](https://arthurcaillau.com/image-record-iter/))
+
 ## Running im2rec
 
 To clone the MXNet repository. The im2rec.py is in tools folder.
