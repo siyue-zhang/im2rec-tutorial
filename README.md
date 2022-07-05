@@ -41,3 +41,22 @@ integer_image_index | label_index | path_to_image
 ## AWS Image Classification
 
 Pretrained models can use only a fixed 224 x 224 image size. Typical image dimensions for image classification are '3, 224, 224'. This is similar to the ImageNet dataset.
+
+**Training** and **Validation** data channels are compulsory.
+```
+train_data = sagemaker.session.s3_input(
+    s3train_path, 
+    distribution='FullyReplicated', 
+    content_type='application/x-recordio', 
+    s3_data_type='S3Prefix'
+)
+
+validation_data = sagemaker.session.s3_input(
+    s3validation_path, 
+    distribution='FullyReplicated', 
+    content_type='application/x-recordio', 
+    s3_data_type='S3Prefix'
+)
+
+data_channels = {'train': train_data, 'validation': validation_data}
+```
