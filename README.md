@@ -1,6 +1,6 @@
 # im2rec-tutorial
 
-(Reference: [MXNet blog](https://arthurcaillau.com/image-record-iter/))
+(Reference: [MXNet blog](https://arthurcaillau.com/image-record-iter/), [GLUON](https://cv.gluon.ai/build/examples_datasets/recordio.html))
 
 ## Running im2rec
 
